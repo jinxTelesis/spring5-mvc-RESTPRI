@@ -1,13 +1,15 @@
 package guru.springfamework.spring5mvcrest.services;
 
+import guru.springfamework.api.v1.CategoryMapper;
 import guru.springfamework.api.v1.model.CategoryDTO;
 import guru.springfamework.domain.Category;
 import guru.springfamework.repositories.CategoryRepository;
 import guru.springfamework.services.CategoryService;
+import guru.springfamework.services.CategoryServiceImpl;
 import org.junit.Test;
 import org.mockito.Mock;
+import org.mockito.MockitoAnnotations;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.List;
 
@@ -23,6 +25,12 @@ public class CategoryServiceTest {
 
     @Mock
     CategoryRepository categoryRepository;
+
+    public void setUp() throws Exception{
+        MockitoAnnotations.initMocks(this);
+
+        categoryService = new CategoryServiceImpl(CategoryMapper.INSTANCE, categoryRepository);
+    }
 
     @Test
     public void getAllCategories() throws Exception {
