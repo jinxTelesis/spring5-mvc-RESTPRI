@@ -5,11 +5,11 @@ import guru.springfamework.domain.Category;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 
+
 @Mapper
 public interface CategoryMapper {
 
-    // == not sure about this code ==
-    CategoryMapper INSTANCE = Mappers.getMapperClass(CategoryMapper.class);
+    CategoryMapper INSTANCE = Mappers.getMapper(CategoryMapper.class);
 
 
     CategoryDTO categoryToCategoryDTO(Category category);
