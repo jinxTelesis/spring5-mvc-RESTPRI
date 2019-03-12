@@ -1,6 +1,6 @@
 package guru.springfamework.services;
 
-import guru.springfamework.api.v1.CategoryMapper;
+import guru.springfamework.api.v1.mapper.CategoryMapper;
 import guru.springfamework.api.v1.model.CategoryDTO;
 import guru.springfamework.repositories.CategoryRepository;
 

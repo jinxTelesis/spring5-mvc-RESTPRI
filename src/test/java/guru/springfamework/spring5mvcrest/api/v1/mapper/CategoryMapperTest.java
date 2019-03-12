@@ -1,6 +1,6 @@
 package guru.springfamework.spring5mvcrest.api.v1.mapper;
 
-import guru.springfamework.api.v1.CategoryMapper;
+import guru.springfamework.api.v1.mapper.CategoryMapper;
 import guru.springfamework.api.v1.model.CategoryDTO;
 import guru.springfamework.domain.Category;
 
