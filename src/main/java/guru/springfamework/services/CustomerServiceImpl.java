@@ -87,7 +87,7 @@ public class CustomerServiceImpl implements CustomerService{
 
 
 
-        }).orElseThrow(RuntimeException::new); //ToDO implement better
+        }).orElseThrow(ResourceNotFoundException::new); 
     }
 
     private String getCustomerUrl(Long id){
